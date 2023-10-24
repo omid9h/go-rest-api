@@ -16,7 +16,7 @@ services:
       db:
         condition: service_healthy
   db:
-    image: "postgres:alpine"
+    image: "postgres:13-alpine"
     restart: always
     environment:
       POSTGRES_USER: "postgres"
